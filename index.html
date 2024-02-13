@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Insertar CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!-- Insertar JavaScript -->
+    <script src="js/index.js" defer></script>
+
+    <!-- Fuentes empleadas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Primary Meta Tags -->
+    <title>Portfolio I MGCS</title>
+    <meta name="title" content="Portfolio I MGCS" />
+    <meta name="description" content="Este proyecto plasma mis habilidades como diseñadora gráfica y frontend developer, basado en crear experiencias digitales estéticas y funcionales." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Portfolio I MGCS" />
+    <meta property="og:description" content="Este proyecto plasma mis habilidades como diseñadora gráfica y frontend developer, basado en crear experiencias digitales estéticas y funcionales." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Portfolio I MGCS" />
+    <meta property="twitter:description" content="Este proyecto plasma mis habilidades como diseñadora gráfica y frontend developer, basado en crear experiencias digitales estéticas y funcionales." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+   
+</head>
+<body>
+
+    <!-- Crearemos un HEADER con cuatro elementos principales: 
+    - icono del menú responsive
+    - H1: logotipo
+    - NAV
+    - button sin función  -->
+
+    <header class="header">
+
+        <button class="header__btn">
+            <img src="assets/iconos/header_icono.svg" alt="btn_menu" class="btn__menu">
+        </button>
+
+        <h1 class="header__h1">
+            <a  href="index.html" title="logotipo">
+                <img src="assets/iconos/martadesign.svg" alt="logo">
+            </a>
+        </h1>
+
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a href="index.html" title="go_home">home</a>
+                </li>
+                <li class="header__li">
+                    <a href="projects.html" title="go__projects">projects</a>
+                </li>
+                <li class="header__li">
+                    <a href="about.html" title="go_about">about</a>
+                </li>
+                <li class="header__li">
+                    <a href="contact.html" title="go_contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        
+
+        <button class="header__icono">
+            <img src="assets/iconos/icono_me.svg" alt="iconoheader" class="svg__me">
+        </button>
+
+    </header>
+
+    <!-- A continuación, creamos el MAIN de la web compuesto por:
+    - hero
+    - 3 secciones : - Projects
+                    - About
+                    - Contact -->
+
+    <main>
+        <div class="hero">
+
+            <div class="hero__texto">
+                <span class="hero__span">Bienvenidos<br>a mi</span>
+                <span class="hero__span">portfolio</span>
+            </div>
+            
+                
+            <div class="hero__img">
+                <a href="about.html">
+                    <img src="assets/ojo_m.webp"  class="img ojo" alt="ojo">
+                </a>
+                <a href="projects.html">
+                    <img src="assets/mano_m.webp"  class="img mano" alt="mano">
+                </a>
+                <a href="contact.html">
+                    <img src="assets/boca_m.webp" class="img labios" alt="labios">
+                </a>
+                
+            </div>
+            
+            
+        </div>
+
+        <a href="projects.html">
+            <div class="works">
+                <!-- Aplicaremos un grid a la estructura en la que se mostrarán los trabajos -->
+                <div class="works__grid">
+                    <div class="grid__section tittle">
+                        <span class="titulo__texto"><br>Trabajos<br>Recientes</span>
+                    </div>
+                    
+                    <div class="grid__section editorial">
+                        <div class="titular">
+                            <img class="editorial icono" src="assets/iconos/logo_dg.svg" alt="icono diseño">
+                            <div class="editorial texto">
+                                <span class="titulo">A la sombra</span>
+                                <span class="tool">Diseño Gráfico</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="grid__section pet">
+                        <div class="titular">
+                            <img class="pet icono" src="assets/iconos/logo_dg.svg" alt="icono pet">
+                            <div class="pet texto">
+                                <span class="titulo">Pew Pew</span>
+                                <span class="tool">Diseño Gráfico</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="grid__section snackeen">
+                        <div class="titular">
+                            <img class="snackeen icono" src="assets/iconos/logo_dg.svg" alt="icono snackeen">
+                            <div class="snackeen texto">
+                                <span class="titulo">Snackeen</span>
+                                <span class="tool">Diseño Gráfico</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="grid__section rococo">
+                        <div class="titular">
+                            <img class="rococo icono" src="assets/iconos/logo_foto.svg" alt="icono rococo">
+                            <div class="rococo texto">
+                                <span class="titulo">Rococó</span>
+                                <span class="tool">Fotografía</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="grid__section cartel">
+                        <div class="titular">
+                            <img class="cartel icono" src="assets/iconos/logo_dg.svg" alt="icono cartel">
+                            <div class="cartel texto">
+                                <span class="titulo">Cartelería</span>
+                                <span class="tool">Diseño Gráfico</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="grid__section webdesign">
+                        <div class="titular">
+                            <img class="web icono" src="assets/iconos/logo_web.svg" alt="icono web">
+                            <div class="web texto">
+                                <span class="titulo">JL</span>
+                                <span class="tool">Diseño Web</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+            </div>
+
+        </a>
+
+        
+
+        <div class="about">
+            
+            <p class="about__span"> 
+                hola! soy marta,<br>diseñadora gráfica<br>y frontend developer
+            </p>
+            <ul class="about__ul Adobe">
+                <li class="ul__li">Photoshop</li>
+                <li class="ul__li">Illustrator</li>
+                <li class="ul__li">Indesign</li>
+                <li class="ul__li">AfterEffects</li>
+                
+            </ul>
+            <ul class="about__ul DW">
+                <li class="ul__li">HTML5</li>
+                <li class="ul__li">CSS3</li>
+                <li class="ul__li">JS</li>
+            </ul>
+
+            <ul class="about__ul photo">
+                <li class="ul__li">Lightroom</li>
+                <li class="ul__li">
+                    <a href="about.html" title="about_section">
+                        <svg class="arrow__svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
+                          </svg>
+                    </a>
+                   
+                </li>
+            </ul>
+                
+           
+        </div>
+
+        <!-- La última sección abarcará la pág de contacto basado en un formulario de email -->
+
+        
+        <div class="contact">
+            <h2 class="contact__tittle">Estamos<br>en contacto!</h2>
+            <p class="contact__p">Gracias por interesarte en mi trabajo.<br>Escríbeme si quieres saber algo más.</p>
+
+            <form class="contact__container" action="https://martagcs00@gmail.com" method="POST">
+                <input type="text" id="message" class="container__message" placeholder="Mensaje">
+                <input type="submit" class="container__btn" value="Enviar">
+            </form>
+            
+        </div>
+    
+        
+    </main>
+    
+    <!-- Por último, creamos el FOOTER de la web con:
+        - <ul> de rrss 
+        - <p> de copyright -->
+
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li class="footer__li">
+                <a href="https://www.instagram.com/m.art.gc?igsh=a3Vob3A5OXl5dzFs" title="instagram" target="_blank" rel="noreferrer">IG</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="https://github.com/martgc" title="github" target="_blank" rel="noreferrer">GH</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="www.linkedin.com/in/marta-garcia-carpintero-531378229" title="linkedin" target="_blank" rel="noreferrer">LD</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="https://www.behance.net/martagarcia61/projects" title="behance" target="_blank" rel="noreferrer">BH</a>
+            </li>
+
+        </ul>
+        <p class="footer__p">copyright©2024martadesign</p>
+    </footer>
+
+</body>
+</html>

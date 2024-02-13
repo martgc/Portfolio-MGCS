@@ -1,0 +1,509 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/* Evitamos problemas con las imagenes */
+img, picture, video, iframe, figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form, input, textarea, select, button, label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+/* Reseteamos las tablas */
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+/* (Probándolo, no usar en producción) En el caso de añadir una  */
+/* p svg{
+  display: inline;
+  width: initial;
+} */
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  
+  color: var(--negro);
+  /* opcional */
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  /* opcional */
+  
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  color:white;
+  background-color: black;
+  cursor: crosshair;
+  padding: 2rem;
+}
+
+/* Comenzamos aplicando el estilo a todos los elementos del header */
+
+.header{
+  width: 100%;
+    
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  
+
+  position: relative;
+}
+
+.header__h1{
+  position: absolute;
+  width: 7rem;  
+  /* background-color: red; */
+    
+}
+
+.btn__menu{
+  display:none;
+
+  width: 40px;
+
+  position: absolute;
+  left:  100px;
+  top: calc(50% - (40px/2));
+  
+  cursor: pointer;
+}
+
+.header__ul{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 1rem;
+
+}
+
+.header__li{
+  font-weight: 600;
+  font-size: .8125rem;
+  color:white;
+  overflow: hidden;
+}
+
+
+.header__icono{
+    
+  width: 1.875rem;
+    /* background-color: red; */
+  transition: all 0.5s ease;
+}
+
+/* Tras finalizar el heder, aplicamos estilos al main de la web */
+    /* Compuesto por tres elementos: h2, un párrafo y un form para crear una vía de contacto con el público */
+
+
+main{
+  padding: 4rem 0rem 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.main__h2{
+  font-size: 3.125rem;
+  font-weight: 600;
+  color: white;
+}
+.main__p{
+  
+  font-size: .8125rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  text-align: center;
+  
+
+}
+
+.p__mail:hover{
+  color: rgba(255, 255, 255, 0.404);
+}
+
+.main__form{
+
+  width: 80%;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+  margin-top: 2.5rem;
+  
+}
+
+.form__wrapper{
+  
+  width: 100%;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  
+  gap:0.5rem;
+}
+
+.form__name{
+  width: 100%;
+  font-weight: 600;
+  font-size: .625rem;
+  color:black;
+  background-color: white;
+  
+  padding: 2rem 1rem;
+  border-radius: 1.25rem;
+}
+
+.form__email{
+  width: 100%;
+  background-color: white;
+
+  font-weight: 600;
+  font-size: .625rem;
+  color:black;
+  
+  padding: 2rem 1rem;
+  border-radius: 1.25rem;
+}
+
+.form__message{
+  width: 100%;
+  min-height: 12.5rem;
+  
+  background-color: white;
+
+  font-weight: 600;
+  font-size: .625rem;
+  color:black;
+  
+  padding: 2rem 1rem;
+  border-radius: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.btn{
+  width: 130px;
+  background-color: white;
+
+  display: inline-flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: flex-end;
+
+  font-weight: 600;
+  font-size: .625rem;
+  
+  color:rgb(120, 120, 120);
+  
+  padding: 1.5rem 1rem;
+  border-radius: 1.25rem;
+  margin-top: 0.5rem;
+
+}
+.footer{
+  width: 100%;
+  padding: 10rem  0rem 1rem; 
+
+  font-size: .75rem;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.footer__ul{
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+
+  gap: 1rem;
+}
+
+.footer__li{
+  display:flex;
+  flex-flow: row nowrap;
+  gap: .625rem;
+  font-weight: 600;
+
+  transition: all 0.5s ease; 
+}
+
+.footer__li:hover{
+  color: rgba(255, 255, 255, 0.539);
+
+}
+
+.footer__li::after{
+  display: block;
+  content: '';
+  background-color: white;
+  width: .0625rem;
+  height: .875rem;
+}
+
+.footer__li:last-child::after{
+  display: none;
+}
+
+.header__li:after{
+
+  display:none;
+}
+
+.header__li:hover::after{
+
+  display:block;
+  content: '';
+  background-color: white;
+  margin-top: 2px;
+
+  width: 1.5625rem;
+  height: 1px;
+
+  animation: slideRight 0.2s linear;
+
+}
+
+@keyframes slideRight{
+  from{
+    transform: translateX(-100%);
+  }
+
+  to{
+    transform: translateX(0%);
+  }
+
+}
+
+@media (max-width:900px){
+  .btn__menu{
+    display: block;
+    z-index: 2;
+  }
+  .header__h1{
+    margin-right: 0px;
+    right: calc(50% - (100px/2));
+  }
+  .header__icono{
+    margin-left: 0px;
+  }
+
+  .header__nav{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+
+    position: fixed;
+    right:0;
+    top:0px;
+
+    z-index: 1;   
+
+    transform: translateY(-200%);
+  }
+
+  .header__ul{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 5rem;
+  }
+
+  .header__li{
+    color: black;
+    font-size: 5.625rem;
+    transition: all 0.5s ease;
+  }
+
+  .header__li:hover{
+    color: rgba(0, 0, 0, 0.12);
+  }
+  
+  .header__nav.active{
+    transform: translateY(0%);
+  }
+  
+}
+/* RESPONSIVE */
+@media (max-width:900px){
+  .btn__menu{
+    display: block;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 30px;
+  }
+  .header__h1{
+    right: calc(50% - (100px/2));
+  }
+  
+  /* Creamos un menú responsive */
+  .header__nav{
+    width: 100%;
+    height: 100vh;
+
+    background-color: white;
+
+    position: fixed;
+    right:0;
+    top:0px;
+
+    z-index: 1;
+
+    transform: translateY(-200%);
+  }
+  .header__ul{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0rem 2rem;
+
+    margin-top: 5rem; 
+  }
+  .header__li{
+    color: black;
+    font-size: 3.75rem;
+    transition: all 0.5s ease;
+  }
+  .header__li:hover{
+    color: rgba(0, 0, 0, 0.12);
+  }
+  .header__nav.active{
+    transform: translateY(0%);
+  }
+}
+
+@media(max-width: 770px){
+  
+  .header__h1{
+    width: 5.625rem;
+  }
+  
+  .footer{
+    font-size: .625rem;
+  }
+
+  .main__form{
+    width: 100%;
+  }
+
+  .main__p{
+    font-size: .625rem;
+  }
+ 
+}
+
+@media(max-width:600px){
+  .footer{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+  }
+ 
+}
+
+

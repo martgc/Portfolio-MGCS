@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.02 71.44">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #000;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Capa_4" data-name="Capa 4">
+    <circle class="cls-1" cx="35.51" cy="35.5" r="34.64"/>
+  </g>
+  <g id="Capa_2" data-name="Capa 2">
+    <g>
+      <rect class="cls-2" x="16.97" y="35.46" width="18.09" height="18.09" rx="2.71" ry="2.71" transform="translate(-18.49 70.52) rotate(-90)"/>
+      <path class="cls-2" d="M16.97,15.65h9.05c4.99,0,9.05,4.05,9.05,9.05h0c0,4.99-4.05,9.05-9.05,9.05h-9.05V15.65h0Z" transform="translate(1.33 50.71) rotate(-90)"/>
+      <rect class="cls-2" x="36.78" y="15.65" width="18.09" height="18.09" rx="2.7" ry="2.7" transform="translate(70.52 -21.14) rotate(90)"/>
+      <path class="cls-2" d="M36.78,35.46h9.05c4.99,0,9.05,4.05,9.05,9.05h0c0,4.99-4.05,9.05-9.05,9.05h-9.05v-18.09h0Z" transform="translate(90.33 -1.33) rotate(90)"/>
+    </g>
+  </g>
+</svg>

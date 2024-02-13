@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact I MGCS</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/general.js" defer></script>
+</head>
+<body>
+    <!-- Comenzamos con el header por defecto de la web -->
+    <header class="header">
+
+        <button class="header__btn">
+            <img src="assets/iconos/header_icono.svg" alt="btn_menu" class="btn__menu">
+        </button>
+
+        <h1 class="header__h1">
+            <a  href="index.html" title="logotipo">
+                <img src="assets/iconos/martadesign.svg" alt="logo">
+            </a>
+        </h1>
+
+
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li class="header__li">
+                    <a href="index.html" title="go_home">home</a>
+                </li>
+                <li class="header__li">
+                    <a href="projects.html" title="go_projects">projects</a>
+                </li>
+                <li class="header__li">
+                    <a href="about.html" title="go_about">about</a>
+                </li>
+                <li class="header__li">
+                    <a href="contact.html" title="go_contact">contact</a>
+                </li>
+            </ul>
+        </nav>
+
+       <a href="#" title="header_icono">
+        <img src="assets/iconos/icono_me.svg" alt="iconoheader" class="header__icono">
+       </a>
+
+    </header>
+
+    <!-- El MAIN compuesto por : 
+    - Introducción: - H2
+                    - <p> 
+    - FORM -->
+    
+    <main>
+        <h2 class="main__h2">Contact</h2>
+        <p class="main__p">Déjame un mensaje en mi correo <a href="mailto:martagcs00@gmail.com" title="mail" class="p__mail">martagcs00@gmail.com</a> o usa el formulario.</p>
+
+
+        <form class="main__form" action="https://martagcs00@gmail.com" method="POST">
+            <div class="form__wrapper">
+                <input type="text" id="name" class="form__name" placeholder="Nombre">
+                <input type="email" id="email" class="form__email" placeholder="Email">
+            </div>
+            <input type="text" id="message" class="form__message" placeholder="Hola Marta....">
+            <input type="submit" class="btn" value="Enviar">
+        </form>
+        
+    </main>
+    
+    <footer class="footer">
+        <ul class="footer__ul">
+            <li class="footer__li">
+                <a href="https://www.instagram.com/m.art.gc?igsh=a3Vob3A5OXl5dzFs" title="instagram" target="_blank" rel="noreferrer">IG</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="https://github.com/martgc" title="github" target="_blank" rel="noreferrer">GH</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="www.linkedin.com/in/marta-garcia-carpintero-531378229" title="linkedin" target="_blank" rel="noreferrer">LD</a>
+            </li>
+
+            <li class="footer__li">
+                <a href="https://www.behance.net/martagarcia61/projects" title="behance" target="_blank" rel="noreferrer">BH</a>
+            </li>
+
+        </ul>
+        <p class="footer__p">copyright©2024martadesign</p>
+    </footer>
+
+    
+</body>
+</html>
