@@ -1,5 +1,5 @@
 # Porfolio I MGCS
-![Imagen del proyecto](../portfolio/assets/readme-1.png)
+![Imagen del proyecto](https://github.com/martgc/Portfolio-MGCS/blob/main/readme-1.png)
 ![Imagen del proyecto](../portfolio/assets/readme-2.png)
 
 
